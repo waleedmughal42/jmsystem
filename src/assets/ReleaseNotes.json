@@ -1,0 +1,11 @@
+
+
+[
+  {
+    "ReleaseVersion" : "1.0.0.1010",
+    "ReleaseNotes" :
+    [
+      {"note":"Set up boiler plate."}
+    ]
+  }
+]
