@@ -1,41 +1,37 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { cAboutComponent } from './components/about/about.component';
-import { cNotfoundComponent } from './components/authentication/404/notfound.component';
-import { cLoginComponent } from './components/authentication/login/login.component';
-import { cSignupComponent } from './components/authentication/signup/signup.component';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = 
-[
-  {
-    path : "",
-    component : cLoginComponent,
-    data: {title:'Login'}
-  },
-  {
-    path : "login",
-    component : cLoginComponent,
-    data: {title:'Login'}
-  },
-  {
-    path : "signup",
-    component : cSignupComponent,
-    data: {title:'Sign Up'}
-  },
-  {
-    path : "about",
-    component : cAboutComponent,
-    data: {title:'About'}
-  },
-  {
-    path : "**",
-    component : cNotfoundComponent,
-    data: {title:'Not Found'}
-  }
+import { FullComponent } from './layouts/full/full.component';
+import { BlankComponent } from './layouts/blank/blank.component';
+
+export const Approutes: Routes = [
+	{
+		path: '',
+		component: FullComponent,
+		children: [
+			{ path: '', redirectTo: '/dashboard/dashboard1', pathMatch: 'full' },
+			{
+				path: 'dashboard',
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+		
+			{ path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule) },
+			
+		]
+	},
+	{
+		path: '',
+		component: BlankComponent,
+		children: [
+			{
+				path: 'authentication',
+				loadChildren:
+					() => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
+			}
+		]
+	},
+	{
+		path: '**',
+		redirectTo: '/authentication/404'
+	}
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

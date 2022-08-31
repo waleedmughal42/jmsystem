@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .login-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 40%;
+    max-width: 30%;
+  }
+.login-form {
+    width: 300px;
+}
+
+  .login-icon img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* .theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea  */
+  
+  .mat-form-field-label {
+    color: rgb(255 255 255) !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
