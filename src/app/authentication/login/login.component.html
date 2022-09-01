@@ -1,29 +1,80 @@
-<div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(assets/images/background/bg-img.jpeg);">
-    <div class="login-icon" >
-        <img src="assets/images/users/logo-img.png" height="100" alt="logo">
+<!-- <app-loader *ngIf="bSpinner"></app-loader> -->
+<div class="auth-wrapper bg-color d-flex no-block justify-content-center align-items-center">
+    <span class=""></span>
+    <div class="auth-box m-3 m-md-0">
+        <div>
+            <div class="logo m-t-10 m-b-10">
+                <span class="db">
+                    <span class="font-26 ti-user"></span>
+                </span>
+                <h5 class="font-medium m-b-10 m-t-20">Sign In</h5>
+            </div>
+            <!-- Form -->
+            <div class="row">
+                <div class="col-12">
+                    <form class="form-horizontal m-t-20">
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" formControlName="username" placeholder="Username"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" formControlName="password"
+                                placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <div class="custom-control custom-checkbox d-flex">
+
+                                    <a href="javascript:void(0)" id="to-recover"
+                                        class="text-dark font-14 ml-auto"><i class="fa fa-lock m-r-5"></i> Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button class="btn btn-block btn-lg btn-dark">Log
+                                    In</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-b-0 m-t-10">
+                            <div class="col-sm-12 text-center">
+                                Don't have an account? <a routerLink="/authentication/signup"
+                                    class="text-dark m-l-5"><b>Sign Up</b></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="recoverform">
+            <div class="logo m-t-10">
+                <span class="db">
+                    <span class="ti-user"></span>
+                </span>
+                <h5 class="font-medium m-b-10 m-t-20">Recover Password</h5>
+                <span>Enter your Email and instructions will be sent to you!</span>
+            </div>
+            <div class="row m-t-20">
+               
+                <form class="col-12">
+                    
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input class="form-control form-control-lg" type="email" placeholder="Email"
+                                formControlName="email">
+                        </div>
+                    </div>
+                    <div class="row m-t-20">
+                        <div class="col-12">
+                            <button class="btn btn-block btn-lg btn-danger"
+                                (click)="LoginComponent_SendForgotPasswordRequest()">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> -->
     </div>
-        <div class="login-form" >
-            <h2 class="text-white d-flex justify-content-center">Login</h2>
-             <!-- Form -->
-             <form class=" example-form">
-                 <div class="d-flex align-items-center ">      
-                     <i class="username-icone fa fa-user mr-2"></i>
-                     <mat-form-field class="example-full-width" appearance="">
-                       <mat-label>Username</mat-label>
-                       <input matInput color="danger">
-                     </mat-form-field>
-                 </div>
-                 
-                 <div class="d-flex align-items-center">
-                     <i class="password-icon fa fa-key mr-2" aria-hidden="true"></i>
-                     <mat-form-field class="example-full-width" appearance="">
-                         <mat-label>password</mat-label>
-                         <input type="password" matInput  >
-                       </mat-form-field>  
-                 </div>
-                 <div class="d-flex justify-content-center mt-3">
-                    <button  mat-raised-button color="primary" type="submit">LOGIN</button>
-                 </div>
-               </form>
-         </div>
 </div>
