@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+body{  font-family: 'Poppins', sans-serif !important;}
+.bg-img{
+  background:url(assets/images/background/socialbg.jpg) no-repeat center center;
+  filter: grayscale(60%) blur(8px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.auth-wrapper .auth-box {
+    border-radius: 10px;
+    width: 450px !important;
+    max-width: 500px !important;
+    padding: 30px !important;
+  }
+
+/* auth-scss */
+
+
+
+
+
+
+
+
+
+.btn-dark {
+    color: #fff;
+    background-color: #24263c !important;
+    border-color: #24263c !important;
+  }
+  .btn-outline-dark{
+    border-color: #24263c !important;
+  }
+  .btn-outline-dark:hover{
+    border-color: #24263c !important;
+    background-color: #24263c !important;
+  }
+  .btn-outline-dark:focus, .btn-outline-dark.focus {
+    box-shadow: none !important;
+  }
