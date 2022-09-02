@@ -1,6 +1,23 @@
 <<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
 body{  font-family: 'Poppins', sans-serif !important;}
+
+
+
+.cursor-pointer{
+  cursor: pointer !important;
+}
+
+.ti-user-avatar{
+  font-size: 55px !important;
+}
+
+
+
+
+
+
+
 .bg-img{
   background:url(assets/images/background/socialbg.jpg) no-repeat center center;
   filter: grayscale(60%) blur(8px);
