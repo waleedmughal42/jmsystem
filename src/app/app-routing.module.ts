@@ -9,21 +9,17 @@ export const Approutes: Routes = [
 		path: '',
 		component: FullComponent,
 		children: [
-			// { path: '', redirectTo: '/dashboard/dashboard1', pathMatch: 'full' },
+			{ path: '', redirectTo: '/authentication/login', pathMatch: 'full' },
 			{
 				path: 'dashboard',
 				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
-			},
-		
-			// { path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule) },
-			
+			},	
 		]
 	},
 	{
 		path: '',
 		component: BlankComponent,
 		children: [
-			{ path: '', redirectTo: '/authentication/login', pathMatch: 'full' },
 			{
 				path: 'authentication',
 				loadChildren:
