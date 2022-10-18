@@ -14,6 +14,10 @@ export const Approutes: Routes = [
 				path: 'dashboard',
 				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
 			},	
+			// {
+			// 	path: 'dashboard',
+			// 	loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			// },	
 		]
 	},
 	{
@@ -30,5 +34,9 @@ export const Approutes: Routes = [
 	{
 		path: '**',
 		redirectTo: '/authentication/404'
+	},
+	{
+		path: 'admin',
+		redirectTo: '/app/admins/admin',
 	}
 ];

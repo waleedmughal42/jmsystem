@@ -10,3 +10,8 @@
 .ct-series-a .ct-slice-donut {
   stroke: rgb(30, 136, 229);
 }
+
+.products-card{
+  height: 11rem !important;
+  border-radius: 10px;
+}

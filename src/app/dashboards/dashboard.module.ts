@@ -13,7 +13,6 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { IncomeCounterComponent } from './dashboard-components/income-counter/income-counter.component';
 import { ProjectCounterComponent } from './dashboard-components/project-counter/project-counter.component';
 import { ProjectComponent } from './dashboard-components/project/project.component';
-import { RecentcommentComponent } from './dashboard-components/recent-comment/recent-comment.component';
 import { RecentmessageComponent } from './dashboard-components/recent-message/recent-message.component';
 import { SocialSliderComponent } from './dashboard-components/social-slider/social-slider.component';
 import { TodoComponent } from './dashboard-components/to-do/todo.component';
@@ -23,10 +22,8 @@ import { WidgetComponent } from './dashboard-components/widget/widget.component'
 import { CustomerSupportComponent } from './dashboard-components/customer-support/cs.component';
 import { TotalEarningComponent } from './dashboard-components/total-earnings/te.component';
 import { FeedsComponent } from './dashboard-components/feeds/feeds.component';
-import { EarningComponent } from './dashboard-components/earning-report/earning-report.component';
 import { ActivityComponent } from './dashboard-components/activity-timeline/activity.component';
 import { MonthlyIncomeComponent } from './dashboard-components/monthly-income/monthly-income.component';
-import { VisitSeparationComponent } from './dashboard-components/visit-separation/visit-separation.component';
 import { WebsiteVisitComponent } from './dashboard-components/website-visit/website-visit.component';
 import { SalesOverviewComponent } from './dashboard-components/sales-overview/sales-overview.component';
 import { TotalSalesComponent } from './dashboard-components/total-sales/total-sales.component';
@@ -39,7 +36,6 @@ import { SalesEarningComponent } from './dashboard-components/sales-earning/sale
     IncomeCounterComponent,
     ProjectCounterComponent,
     ProjectComponent,
-    RecentcommentComponent,
     RecentmessageComponent,
     SocialSliderComponent,
     TodoComponent,
@@ -49,10 +45,8 @@ import { SalesEarningComponent } from './dashboard-components/sales-earning/sale
     CustomerSupportComponent,
     TotalEarningComponent,
     FeedsComponent,
-    EarningComponent,
     ActivityComponent,
     MonthlyIncomeComponent,
-    VisitSeparationComponent,
     WebsiteVisitComponent,
     SalesOverviewComponent,
     TotalSalesComponent,
