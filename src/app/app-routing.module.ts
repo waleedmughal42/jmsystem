@@ -13,11 +13,19 @@ export const Approutes: Routes = [
 			{
 				path: 'dashboard',
 				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
-			},	
-			// {
-			// 	path: 'dashboard',
-			// 	loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
-			// },	
+			},
+			{
+				path: 'admins',
+				loadChildren: () => import('./admins/admin.module').then(m => m.AdminsModule)
+			},
+			{
+				path: 'managers',
+				loadChildren: () => import('./managers/managers.module').then(m => m.ManagersModule)
+			},
+			{
+				path: 'godowns',
+				loadChildren: () => import('./godowns/godown1.module').then(m => m.Godown1Module)
+			}
 		]
 	},
 	{
@@ -34,9 +42,5 @@ export const Approutes: Routes = [
 	{
 		path: '**',
 		redirectTo: '/authentication/404'
-	},
-	{
-		path: 'admin',
-		redirectTo: '/app/admins/admin',
 	}
 ];

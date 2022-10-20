@@ -10,10 +10,6 @@ export const AdminRoutes: Routes = [
       {
         path: 'admin',
         component: AdminComponent,
-        data: {
-          title: 'Modern Dashboard',
-          urls: [{ title: 'Dashboard', url: '/admin' }, { title: 'Modern Dashboard' }]
-        }
       },
     ]
   }

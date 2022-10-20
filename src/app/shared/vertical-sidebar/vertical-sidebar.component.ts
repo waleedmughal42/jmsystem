@@ -33,6 +33,8 @@ export class VerticalSidebarComponent {
         (s) => {
           if (s.path === this.router.url) {
             this.path = m.title;
+            console.log("The Path ===>>", this.path);
+            
           }
         }
       ));

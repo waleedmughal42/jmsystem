@@ -1,0 +1,8 @@
+.page-wrapper > .container-fluid {
+    padding: 20px !important;
+    min-height: calc(100vh - 60px) !important;
+  }
+  .user-list-table{
+    max-height: calc(100vh - 341px);
+    overflow: auto;
+  }

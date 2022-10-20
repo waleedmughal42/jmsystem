@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-admin',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private oFormBuilder: FormBuilder,private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
+  openModal(targetModal) {
+    this.modalService.open(targetModal, {
+        centered: true,
+        backdrop: 'static',
+        size: 'md'
+    });
+
+}
 
 }
