@@ -1,43 +1,55 @@
 <div class="row">
     <div class="col-12">
       <div class="card card-body users-table">
-        <h4 class="card-title">List Of Users</h4>
+        <h4 class="card-title">List Of Managers</h4>
         <div class="d-flex mb-3 mt-3">
           <input type="text" class="form-control w-25" placeholder="Search by First Name or Email">
-          <button class="btn btn-dark ml-auto" (click)="openModal(newUser)"><span class="ti-user"></span> Add User</button>
+          <button class="btn btn-dark ml-auto" (click)="openModal(newManager)"><span class="ti-user"></span> Add Manager</button>
         </div>
         <div class="table-responsive user-list-table table-bordered">
           <table class="table table-striped mb-0 no-wrap v-middle">
             <thead>
               <tr>
-                <th class="" scope="col">User ID</th>
+                <th class="" scope="col">Manager ID</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Email</th>
-                <th scope="col">Address</th>
+                <th scope="col">godown Loction</th>
+                <th scope="col">Godown Manager</th>
+                <th scope="col">godown Start Date</th>
+
               </tr>
             </thead>
             <tbody>
                 <tr>
                   <th scope="row">1</th>
                   <td>Mark</td>
-                  <td>Mark</td>
+                  <td>Henry</td>
                   <td>Mark@gmail.com</td>
                   <td>ammar villas</td>
+                  <td>Mitchel</td>
+                  <td>12/01/2022</td>
+
                 </tr>
                 <tr>
                   <th scope="row">2</th>
                   <td>Jacob</td>
-                  <td>Jacob</td>
+                  <td>Criss</td>
                   <td>Jacob@gmail.com</td>
                   <td>Toronto</td>
+                  <td>Mitchel</td>
+                  <td>12/01/2022</td>
+
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Alon</td>
-                    <td>Alon</td>
+                    <td>Mus</td>
                     <td>Alon@gmail.com</td>
                     <td>Las Vegas</td>
+                    <td>Mitchel</td>
+                  <td>12/01/2022</td>
+
                 </tr>
               </tbody>
           </table>
@@ -49,17 +61,19 @@
     </div>
   </div>
 
+  
+
 
   <!-- Add User -->
-  <ng-template #newUser let-modal >
+  <ng-template #newManager let-modal >
     <div class="modal-header">
-      <h4 class="modal-title">New User</h4>
+      <h4 class="modal-title">New Manager</h4>
     </div>
     <form>
       <div class="modal-body">
         <div class="form-row">
           <div class="form-group col-sm-6">
-            <label for="userId">User Id</label>
+            <label for="userId">Manager Id</label>
             <input type="text" class="form-control" id="userId">
           </div>
           <div class="form-group col-sm-6">
@@ -80,11 +94,11 @@
 
         <div class="form-row">
           <div class="form-group col-sm-6">
-            <label for="companyName">WareHouse</label>
+            <label for="companyName">Godawn location</label>
             <input type="text" class="form-control" id="companyName">
           </div>
           <div class="form-group col-sm-6">
-            <label for="deptName">Godamns</label>
+            <label for="deptName">Godamn Manager</label>
             <input type="text" class="form-control" id="deptName">
           </div>
         </div>
