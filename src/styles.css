@@ -12,12 +12,6 @@ body{  font-family: 'Poppins', sans-serif !important;}
   font-size: 55px !important;
 }
 
-
-
-
-
-
-
 .bg-img{
   background:url(assets/images/background/socialbg.jpg) no-repeat center center;
   filter: grayscale(60%) blur(8px);
@@ -39,14 +33,6 @@ body{  font-family: 'Poppins', sans-serif !important;}
   }
 
 /* auth-scss */
-
-
-
-
-
-
-
-
 
 .btn-dark {
     color: #fff;
