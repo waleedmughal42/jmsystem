@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-godown1',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Godown1Component implements OnInit {
 
-  constructor() { }
+  constructor(private oFormBuilder: FormBuilder,private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
+  openModal(targetModal) {
+    this.modalService.open(targetModal, {
+        centered: true,
+        backdrop: 'static',
+        size: 'md'
+    });
+
+}
 
 }
