@@ -1,172 +1,249 @@
-<section id="service" class="services pt-0">
-    <div class="container" data-aos="fade-up">
+<section id="service" class="services pt-0 d-none">
+  <div class="container" data-aos="fade-up">
 
-      <div class="section-header d-flex justify-content-between align-items-center">
-        <h2>Godowns</h2>
-        <button class="btn btn-dark mb-3" (click)="openModal(newUser)"><span class="ti-plus"></span> Add Godowns</button>
-
-
-      </div>
-
-      <div class="row gy-4">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="card">
-            <div class="card-img">
-                <ngb-carousel>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random first slide" />
-                            <a role="button" class="carousel-control-prev">
-                                <span aria-hidden="true" class="carousel-control-prev-icon">
-                            </span><span class="sr-only">Previous</span></a>
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/cargo-service.jpg" alt="Random second slide" />
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg" alt="Random third slide" />
-                        </div>
-                    </ng-template>
-                </ngb-carousel>
-            </div>
-            <div class="d-flex justify-content-between">
-                <h3><a class="stretched-link">Godown 1</a></h3>
-                <span class="ti-pencil p-2"></span>
-            </div>
-            <p>Manager <strong>Micheal</strong></p>
-            <address>4588 4939 Randolph Street Boston Massachusetts</address>
-          </div>
-        </div><!-- End Card Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card">
-            <div class="card-img">
-                <ngb-carousel>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/warehousing-service.jpg" alt="Random first slide" />
-                            <a role="button" class="carousel-control-prev">
-                                <span aria-hidden="true" class="carousel-control-prev-icon">
-                            </span><span class="sr-only">Previous</span></a>
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg" alt="Random second slide" />
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random third slide" />
-                        </div>
-                    </ng-template>
-                </ngb-carousel>
-            </div>
-            <div class="d-flex justify-content-between">
-                <h3><a class="stretched-link">Godown 2</a></h3>
-                <span class="ti-pencil p-2"></span>
-            </div>
-            <p>Manager <strong>Micheal</strong></p>
-            <address>4588 Fulton Street West California</address>
-          </div>
-        </div><!-- End Card Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="card">
-            <div class="card-img">
-                <ngb-carousel>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random first slide" />
-                            <a role="button" class="carousel-control-prev">
-                                <span aria-hidden="true" class="carousel-control-prev-icon">
-                            </span><span class="sr-only">Previous</span></a>
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/cargo-service.jpg" alt="Random second slide" />
-                        </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="">
-                            <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg" alt="Random third slide" />
-                        </div>
-                    </ng-template>
-                </ngb-carousel>
-            </div>
-            <div class="d-flex justify-content-between">
-                <h3><a class="stretched-link">Godown 3</a></h3>
-                <span class="ti-pencil p-2"></span>
-            </div>
-            <p>Manager <strong>Micheal</strong></p>
-            <address>4588 Port Orange West Florida</address>
-          </div>
-        </div><!-- End Card Item -->
-
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="card">
-            <div class="card-img">
-              <img src="..//..//..//assets/images/warehousing-service.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="d-flex justify-content-between">
-                <h3><a class="stretched-link">Godown 4</a></h3>
-                <span class="ti-pencil p-2"></span>
-            </div>
-            <p>Manager <strong>Micheal</strong></p>
-            <address>4588 Fulton Street West Virginia</address>
-          </div>
-        </div><!-- End Card Item -->
-
-      </div>
-
+    <div class="section-header d-flex justify-content-between align-items-center">
+      <h2>Godowns</h2>
+      <button class="btn btn-dark mb-3" (click)="openModal(newUser)"><span class="ti-plus"></span> Add Godowns</button>
     </div>
-  </section><!-- End Services Section -->
 
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card">
+          <div class="card-img">
+            <ngb-carousel>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random first slide" />
+                  <a role="button" class="carousel-control-prev">
+                    <span aria-hidden="true" class="carousel-control-prev-icon">
+                    </span><span class="sr-only">Previous</span></a>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/cargo-service.jpg" alt="Random second slide" />
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg"
+                    alt="Random third slide" />
+                </div>
+              </ng-template>
+            </ngb-carousel>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3><a class="stretched-link">Godown 1</a></h3>
+            <span class="ti-pencil p-2"></span>
+          </div>
+          <p>Manager <strong>Micheal</strong></p>
+          <address>4588 4939 Randolph Street Boston Massachusetts</address>
+        </div>
+      </div><!-- End Card Item -->
 
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card">
+          <div class="card-img">
+            <ngb-carousel>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/warehousing-service.jpg"
+                    alt="Random first slide" />
+                  <a role="button" class="carousel-control-prev">
+                    <span aria-hidden="true" class="carousel-control-prev-icon">
+                    </span><span class="sr-only">Previous</span></a>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg"
+                    alt="Random second slide" />
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random third slide" />
+                </div>
+              </ng-template>
+            </ngb-carousel>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3><a class="stretched-link">Godown 2</a></h3>
+            <span class="ti-pencil p-2"></span>
+          </div>
+          <p>Manager <strong>Micheal</strong></p>
+          <address>4588 Fulton Street West California</address>
+        </div>
+      </div><!-- End Card Item -->
 
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card">
+          <div class="card-img">
+            <ngb-carousel>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/storage-service.jpg" alt="Random first slide" />
+                  <a role="button" class="carousel-control-prev">
+                    <span aria-hidden="true" class="carousel-control-prev-icon">
+                    </span><span class="sr-only">Previous</span></a>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/cargo-service.jpg" alt="Random second slide" />
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <div class="">
+                  <img class="img-fluid" src="..//..//..//assets/images/logistics-service.jpg"
+                    alt="Random third slide" />
+                </div>
+              </ng-template>
+            </ngb-carousel>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3><a class="stretched-link">Godown 3</a></h3>
+            <span class="ti-pencil p-2"></span>
+          </div>
+          <p>Manager <strong>Micheal</strong></p>
+          <address>4588 Port Orange West Florida</address>
+        </div>
+      </div><!-- End Card Item -->
 
-  <!-- Add Godowm -->
-  <ng-template #newUser let-modal >
-    <div class="modal-header">
-      <h4 class="modal-title">New Godown</h4>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="card">
+          <div class="card-img">
+            <img src="..//..//..//assets/images/warehousing-service.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h3><a class="stretched-link">Godown 4</a></h3>
+            <span class="ti-pencil p-2"></span>
+          </div>
+          <p>Manager <strong>Micheal</strong></p>
+          <address>4588 Fulton Street West Virginia</address>
+        </div>
+      </div><!-- End Card Item -->
     </div>
-    <form>
-      <div class="modal-body">
-        <div class="form-row">
-            <div class="form-group col-sm-6">
-              <label for="firstName">Godown Name</label>
-              <input type="text" class="form-control" id="firstName">
-            </div>
-            <div class="form-group col-sm-6">
-              <label for="lastName">Godown Address</label>
-              <input type="text" class="form-control" id="lastName">
-            </div>
-          </div>
+  </div>
+</section><!-- End Services Section -->
 
-        <div class="form-row">
-          <div class="form-group col-sm-6 upload-btn-wrapper">
-                <!-- <button class="btn btn-primary"><span class="ti-arrow-up"></span> Upload Image</button>
-                <input #myInput type="file"  name="myfile" class="form-control upload-img d-none" style="width: 0;"> -->
-
-            <div class="upload-btn-wrapper">
-                <button class="btn btn-primary cursor-pointer"><span class="ti-arrow-up p-2"></span>Upload Image</button>
-                <input type="file" name="myfile" class="form-control"/>
-            </div>
-
-          </div>
-
+<!-- Add Godowm -->
+<ng-template #newUser let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">New Godown</h4>
+  </div>
+  <form>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="firstName">Godown ID</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="firstName">Godown Name</label>
+          <input type="text" class="form-control" id="firstName">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="lastName">Godown Address</label>
+          <input type="text" class="form-control" id="lastName">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="lastName">Godown Manager</label>
+          <input type="text" class="form-control" id="lastName">
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Cancel</button>
-        <button type="submit" class="btn btn-dark" (click)="modal.close('Close click')">Submit</button>
+
+      <div class="form-row">
+        <div class="form-group col-sm-6 upload-btn-wrapper">
+          <div class="upload-btn-wrapper">
+            <button class="btn btn-primary cursor-pointer"><span class="ti-arrow-up p-2"></span>Upload Image</button>
+            <input type="file" name="myfile" class="form-control" />
+          </div>
+        </div>
       </div>
-    </form>
-  </ng-template>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Cancel</button>
+      <button type="submit" class="btn btn-dark" (click)="modal.close('Close click')">Submit</button>
+    </div>
+  </form>
+</ng-template>
+
+
+
+<div class="card card-body users-table">
+  <h4 class="card-title">List Of Godowns</h4>
+  <div class="d-flex mb-3 mt-3">
+    <input type="text" class="form-control w-25" placeholder="Search by First Name or ID">
+    <button class="btn btn-dark ml-auto" (click)="openModal(newUser)"><span class="ti-user"></span> Add Godown</button>
+  </div>
+</div>
+
+<div class="wrapper-editor">
+  <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">ID</th>
+        <th class="th-sm">Godowm Name</th>
+        <th class="th-sm">Godowm Location</th>
+        <th class="th-sm">Manager</th>
+        <th class="th-sm">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>Wood Godown</td>
+        <td>Edinburgh</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Electronics</td>
+        <td>Tokyo</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>Vegetables</td>
+        <td>San Francisco</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>Wood Godown</td>
+        <td>Edinburgh</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>Electronics</td>
+        <td>Tokyo</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>Books</td>
+        <td>New York</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+      <tr>
+        <td>07</td>
+        <td>Furniture</td>
+        <td>San Francisco</td>
+        <td>Micheal</td>
+        <td><a href="javascript:(void)">View Godown Details </a></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+

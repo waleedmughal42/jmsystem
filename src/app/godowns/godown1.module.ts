@@ -5,11 +5,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Godown1Routes } from './godown1.routing';
 import { RouterModule } from '@angular/router';
+import { GodownDetailsComponent } from './godown-details/godown-details.component';
 
 
 
 @NgModule({
-  declarations: [Godown1Component],
+  declarations: [Godown1Component, GodownDetailsComponent],
   imports: [
     CommonModule,
     FormsModule,
