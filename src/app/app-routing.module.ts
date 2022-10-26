@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
 import { BlankComponent } from './layouts/blank/blank.component';
+import { GodownDetailsComponent } from './godowns/godown-details/godown-details.component';
 
 export const Approutes: Routes = [
 	{
@@ -42,5 +43,9 @@ export const Approutes: Routes = [
 	{
 		path: '**',
 		redirectTo: '/authentication/404'
+	},
+	{
+		path: 'GodownDetailsComponent',
+		component: GodownDetailsComponent
 	}
 ];

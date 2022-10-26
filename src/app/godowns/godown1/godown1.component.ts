@@ -10,7 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class Godown1Component implements OnInit {
 
   constructor(private oFormBuilder: FormBuilder,private modalService: NgbModal) { }
-
+  mdbEditor: true
   ngOnInit(): void {
   }
   openModal(targetModal) {
@@ -19,6 +19,8 @@ export class Godown1Component implements OnInit {
         backdrop: 'static',
         size: 'md'
     });
+    
+    $('.dataTables_length').addClass('bs-select');
 
 }
 
